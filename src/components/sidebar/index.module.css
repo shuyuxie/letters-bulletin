@@ -1,0 +1,33 @@
+.sidebar-toggle {
+  @apply bg-accent border-black border-opacity-20 border-2 w-16 flex items-center justify-center h-16 text-[#493628] text-2xl;
+}
+
+.expanded-sidebar {
+  @apply h-screen bg-accent border-black border-opacity-20 flex flex-col items-center text-center text-black;
+  border-right-width: 4px;
+}
+
+.title {
+  @apply text-black text-6xl px-8 pt-10 pb-4 border-black border-b-2 border-opacity-20;
+}
+
+.sidebar-content {
+  @apply w-full text-3xl flex flex-col justify-between h-full;
+}
+
+.sidebar-link {
+  @apply w-full py-4 border-black border-opacity-20 border-b-2 cursor-pointer flex justify-evenly;
+}
+.sidebar-footer {
+  @apply w-full py-4 border-black border-opacity-20 border-t-2;
+}
+.dropdown-item {
+  padding: 0.5rem 0;
+  cursor: pointer;
+  color: var(--sidebar-text, #333);
+}
+
+.dropdown-item:hover {
+  background-color: var(--sidebar-hover, #e0e0e0);
+  color: var(--sidebar-text-hover, #000);
+}

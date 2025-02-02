@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #85586f;
+  --foreground: #171717;
+  --accent: #AB886D; 
+  --paper: #F8EDE3;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #85586f;
+    --foreground: black;
+    --foreground: black;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: url("/background-noise.png") center center fixed;
+  font-family: "Satisfy", Helvetica, sans-serif;
+  overflow: hidden;
+}
+
+.purple-button {
+  background-color: #85586f;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.brown-button {
+  @apply bg-accent text-black;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.title {
+  font-size: 3rem;
+  margin: 0;
+  padding: 1rem;
+  text-align: center;
+  color: white;
+}

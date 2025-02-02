@@ -1,0 +1,13 @@
+.letter {
+  @apply bg-paper text-black absolute min-w-80 max-w-md;
+  filter: drop-shadow(3px 4px 4px);
+  line-height: 200%;
+}
+
+.heading {
+  @apply flex justify-between text-sm p-8 pb-3 border-b-2 border-black border-opacity-10;
+}
+
+.content {
+  @apply p-8 pt-3;
+}
